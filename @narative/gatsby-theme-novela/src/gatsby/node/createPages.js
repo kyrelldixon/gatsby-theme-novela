@@ -280,7 +280,7 @@ module.exports = async ({ actions: { createPage }, graphql }, themeOptions) => {
       uniqueTags.forEach(tag => {
         let allArticlesOfTheTag;
         try {
-          allArticlesOfTheTag = articles.filter(article =>
+          allArticlesOfTheTag = articlesThatArentSecret.filter(article =>
             article.tags.includes(tag),
           );
         } catch (error) {
