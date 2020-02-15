@@ -33,6 +33,7 @@ module.exports = {
         contentAuthors: "content/authors",
         basePath: "/",
         rootPath: "/",
+        tagPath: "/category",
         articlePermalinkFormat: "/blog/:slug",
         mailchimp: true,
         tags: true,
