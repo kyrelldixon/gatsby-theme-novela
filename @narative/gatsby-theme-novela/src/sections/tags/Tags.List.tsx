@@ -14,7 +14,7 @@ const TagsList: React.FC<TagsListProps> = ({ tags }) => {
       {tags.map((tag, index) => {
         return (
           <List key={index}>
-            <ListItem tag={tag} />
+            <ListItem tag={tag} baseTagPath={'/category'} />
           </List>
         );
       })}
@@ -37,10 +37,15 @@ function slugify(string, base) {
   return `${base}/${slug}`.replace(/\/\/+/g, '/');
 }
 
-const ListItem: React.FC<string> = ({ tag }) => {
+interface ListItemProps {
+  tag: string
+  baseTagPath: string
+}
+
+const ListItem: React.FC<ListItemProps> = ({ tag, baseTagPath }) => {
   // TODO: I don't know what is better code?! maybe create some interface?
   // eg. ITags{tags:[ITag]} & ITag{tag:string, path:string}
-  const tagPath = slugify(tag, '/tag');
+  const tagPath = slugify(tag, baseTagPath);
 
   // MARK: You can implements better UI.
   return (
