@@ -56,7 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-146399883-1",
+        trackingId: "UA-97317599-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
       }
