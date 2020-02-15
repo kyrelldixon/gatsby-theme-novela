@@ -4,6 +4,8 @@ author: Kyrell Dixon
 date: 2020-02-09
 hero: ./images/hero.jpg
 excerpt: Programming languages aren't nearly as important as what you do with them
+secret: true
+tags: ['Career Development']
 ---
 
 Almost all beginner developers are wondering the same thing when starting out:

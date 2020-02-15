@@ -5,6 +5,7 @@ date: 2020-02-10
 hero: ./images/hero.jpg
 slug: beginners-guide-to-building-a-site-from-scratch
 excerpt: How to go from a completely blank page to a full website with any framework
+tags: ['HTML', 'CSS', 'Web Fundamentals']
 ---
 
 The first time you open up a code editor to build a site can be pretty overwhelming. With all the HTML, CSS, and JavaScript that you have to write, where do you even start? This guide will end the confusion by giving you some practical steps on how to approach developing a site from an empty code editor to a complete web page.
