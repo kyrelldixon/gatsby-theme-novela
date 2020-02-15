@@ -31,8 +31,9 @@ module.exports = {
       options: {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
-        basePath: "/articles",
-        rootPath: "/articles",
+        basePath: "/",
+        rootPath: "/",
+        articlePermalinkFormat: "/blog/:slug",
         mailchimp: true,
         tags: true,
         sources: {
