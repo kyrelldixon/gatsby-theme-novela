@@ -15,7 +15,7 @@
     "react-dom": "^16.9.0"
   },
   "scripts": {
-    "develop": "yarn start",
+    "develop": "rm -rf .cache && yarn start",
     "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "clean": "gatsby clean",
