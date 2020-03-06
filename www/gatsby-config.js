@@ -69,5 +69,19 @@ module.exports = {
         endpoint: 'https://gmail.us3.list-manage.com/subscribe/post?u=2d60e20754af6d5ea8e855f91&amp;id=90e1334ab6', // add your MC list endpoint here; see plugin repo for instructions
       },
     },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        // eslint-disable-next-line global-require
+        postCssPlugins: [require(`tailwindcss`)(`./tailwind.config.js`)],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+        purgeOnly: [`src/styles/tailwind.css`],
+      },
+    },
   ],
 };
