@@ -8,7 +8,8 @@ module.exports = {
       heading: `My insights into tech, traveling, and business while learning in public.`,
       maxWidth: 652,
     },
-    social: [{
+    social: [
+      {
         name: `twitter`,
         url: `https://twitter.com/kyrelldixon`,
       },
@@ -26,7 +27,8 @@ module.exports = {
       },
     ],
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: "@narative/gatsby-theme-novela",
       options: {
         contentPosts: "content/posts",
