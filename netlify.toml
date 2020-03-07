@@ -1,3 +1,11 @@
 [build]
-  Command = "yarn build"
-  Publish = "www/public"
+  command = "yarn build"
+  publish = "www/public/"
+  functions = "./functions/"
+
+[dev]
+  command = "yarn start"
+  publish = "www/public/"
+  functionsPort = 34567
+  port = 8000
+  targetPort = 8000

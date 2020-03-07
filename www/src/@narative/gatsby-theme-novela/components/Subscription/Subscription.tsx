@@ -1,4 +1,3 @@
-import addToMailchimp from "gatsby-plugin-mailchimp";
 import React, { useState } from "react";
 
 import Section from "@components/Section";
@@ -6,6 +5,18 @@ import Headings from "@components/Headings";
 
 import styled from "@emotion/styled";
 import mediaqueries from "@styles/media";
+
+const addToConvertkit = (email) => {
+  const url = `/.netlify/functions/convertkit`
+  return fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ email })
+  })
+    .then(res => res.json());
+}
 
 const Subscription: React.FC<{}> = () => {
   const [email, setEmail] = useState("");
@@ -17,9 +28,9 @@ const Subscription: React.FC<{}> = () => {
     event.preventDefault();
 
     setLoading(true)
-    addToMailchimp(email)
+    addToConvertkit(email)
       .then(data => {
-        if (data.result === "error") {
+        if (data.statusCode !== 200) {
           throw data;
         }
 
@@ -31,13 +42,13 @@ const Subscription: React.FC<{}> = () => {
         }, 6000);
       })
       .catch(error => {
-        if (!error.msg) {
+        if (!error.message) {
           // If there is a timeout error, then there is no error message
-          // and the error is like content blocking.
+          // then the error is likely content blocking.
           setError('Looks like your browser is blocking this. Try to disable any tracker-blocking feature and resubmit.');
           return;
         }
-        setError(error.msg);
+        setError(error.message);
       })
       .finally(() => setLoading(false));
   }
@@ -214,7 +225,7 @@ const Button = styled.button<{ hasError: string; subscribed: boolean }>`
 
   &:hover {
     background: ${p =>
-      p.hasError ? p.theme.colors.error : p.theme.colors.accent};
+    p.hasError ? p.theme.colors.error : p.theme.colors.accent};
     color: ${p => p.theme.colors.background};
   }
 
