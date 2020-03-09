@@ -6,7 +6,7 @@ import Book from "./book"
 const Hero = () => {
   const comingSoonRef = useRef()
   const comingSoonTransition = useTransition(true, null, {
-    from:  { opacity: 0, transform: 'translate3d(0,-40px,0)', },
+    from: { opacity: 0, transform: 'translate3d(0,-40px,0)', },
     enter: { opacity: 1, transform: 'translate3d(0,0px,0)', },
     ref: comingSoonRef,
   })
@@ -14,13 +14,13 @@ const Hero = () => {
   const bookRef = useRef()
   const bookTransition = useTransition(true, null, {
     config: config.stiff,
-    from:  { transform: 'scale(0)', },
+    from: { transform: 'scale(0)', },
     enter: { transform: 'scale(1)', },
     ref: bookRef,
   })
 
   useChain([comingSoonRef, bookRef], [0, 0.33])
-  
+
   return (
     <section className="bg-indigo-800 text-white">
       <div className="container mx-auto text-center pt-16 pb-48">

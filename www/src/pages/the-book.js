@@ -6,8 +6,6 @@ import PainPoint from "../components/BookComponents/pain-point"
 import WhatYouLearn from "../components/BookComponents/what-you-learn"
 import SEO from "@narative/gatsby-theme-novela/src/components/SEO";
 
-
-
 const BookLandingPage = () => (
   <Layout>
     <SEO title="Make Money With Code" />
