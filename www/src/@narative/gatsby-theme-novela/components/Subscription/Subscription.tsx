@@ -6,17 +6,7 @@ import Headings from "@components/Headings";
 import styled from "@emotion/styled";
 import mediaqueries from "@styles/media";
 
-const addToConvertkit = (email) => {
-  const url = `/.netlify/functions/convertkit`
-  return fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ email })
-  })
-    .then(res => res.json());
-}
+import { addToConvertkit } from "../../../../utils"
 
 const Subscription: React.FC<{}> = () => {
   const [email, setEmail] = useState("");
