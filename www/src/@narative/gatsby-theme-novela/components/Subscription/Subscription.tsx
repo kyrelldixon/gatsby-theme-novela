@@ -21,9 +21,6 @@ const Subscription: React.FC<{}> = () => {
     const formId = 1253732
     addToConvertKit(formId, email, null, null, [1343911])
       .then(data => {
-        if (data.statusCode !== 200) {
-          throw data;
-        }
 
         setSubscribed(true);
         setEmail("");
