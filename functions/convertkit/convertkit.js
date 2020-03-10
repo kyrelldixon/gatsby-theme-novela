@@ -10,14 +10,26 @@ exports.handler = async (event) => {
     };
   }
 
-  const { CONVERTKIT_FORM_ID, CONVERTKIT_API_KEY } = process.env
-  const URL = `https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}/subscribe`
+  if (!event.queryStringParameters.formId) {
+    return {
+      statusCode: 400,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: "Missing Form ID" }),
+    };
+  }
+
+  const { formId } = event.queryStringParameters
+
+  const { CONVERTKIT_API_KEY } = process.env
+  const URL = `https://api.convertkit.com/v3/forms/${formId}/subscribe`
 
   try {
     const body = {
       ...JSON.parse(event.body),
       api_key: CONVERTKIT_API_KEY,
     }
+
+    console.log(JSON.stringify(body, null, 2))
 
     const { data, status } = await axios.post(URL, body)
     return {
