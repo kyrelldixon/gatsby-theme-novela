@@ -28,5 +28,6 @@ export const addToConvertkit = (email) => {
     },
     body: JSON.stringify({ email })
   })
-    .then(res => res.json());
+    .then(res => (console.log(res), res.json()))
+    .catch(err => (console.log(err), { ...err, message: "Something went wrong" }));
 }

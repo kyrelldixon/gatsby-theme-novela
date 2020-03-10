@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Formik, Form, Field } from "formik";
+import { addToConvertkit } from '../../utils';
 
 const validate = values => {
   let errors = {}
@@ -23,25 +24,28 @@ const initialValues = {
 }
 
 const EmailForm = () => {
-  const [mailchimpResult, setMailchimpResult] = useState({})
-  const [formDisabled, setFormDisabled] = useState(false)
+  const [subscribed, setSubscribed] = useState(false);
+  const [error, setError] = useState("");
 
-  async function handleSubmit(data) {
-    // const response = { result: 'error', msg: 'you are already added to the list' }
-    const response = { result: 'success', msg: 'you got added' }
-    setMailchimpResult(response)
+  function handleSubmit(values) {
+    addToConvertkit(values.email)
+      .then(() => {
+        setSubscribed(true)
 
-    // only want to temporarily display error
-    if (response.result === "error") {
-      setTimeout(() => {
-        setFormDisabled(false)
-      }, 2000);
-    }
+        setTimeout(() => {
+          setSubscribed(false);
+        }, 6000);
+      })
+      .catch(error => {
+        if (!error.message) {
+          // If there is a timeout error, then there is no error message
+          // then the error is likely content blocking.
+          setError('Looks like your browser is blocking this. Try to disable any tracker-blocking feature and resubmit.');
+          return;
+        }
+        setError(error.message);
+      })
   }
-
-  useEffect(() => {
-    setFormDisabled(mailchimpResult.result === "success")
-  }, [mailchimpResult])
 
   return (
     <Formik
@@ -49,7 +53,7 @@ const EmailForm = () => {
       validate={validate}
       onSubmit={handleSubmit}
     >
-      {({ errors, touched }) => (
+      {({ errors, touched, isSubmitting }) => (
         <div className="w-full sm:w-112 text-center bg-white mx-auto rounded-lg pt-8 sm:shadow-lg">
           <div className="px-8">
             <p className="text-2xl font-semibold text-center text-gray-800">Be an Insider</p>
@@ -62,7 +66,6 @@ const EmailForm = () => {
                 name="name"
                 placeholder="Name"
                 type="text"
-                disabled={formDisabled}
               />
               {errors.name && touched.name && <p className="text-red-500 text-xs italic">{errors.name}</p>}
             </div>
@@ -72,27 +75,26 @@ const EmailForm = () => {
                 name="email"
                 placeholder="Email"
                 type="email"
-                disabled={formDisabled}
               />
               {errors.email && touched.email && <p className="text-red-500 text-xs italic">{errors.email}</p>}
             </div>
             <div className="flex flex-col items-center justify-center">
               {
-                mailchimpResult.result === "error" &&
-                <p className="text-red-500 text-sm italic -mt-3 mb-3">{mailchimpResult.msg}</p>
+                error &&
+                <p className="text-red-500 text-sm italic -mt-3 mb-3">{error}</p>
               }
               {
-                mailchimpResult.result === "success" &&
-                <p className="text-green-500 text-sm italic -mt-3 mb-3">{mailchimpResult.msg}</p>
+                subscribed &&
+                <p className="text-green-500 text-sm italic -mt-3 mb-3">Your opt-in email is on the way!</p>
               }
               <button
                 className={
-                  `bg-teal-400 ${!formDisabled ? "hover:bg-teal-500" : "cursor-not-allowed"} text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`
+                  `bg-teal-400 ${!isSubmitting ? "hover:bg-teal-500" : "cursor-not-allowed"} text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`
                 }
                 type="submit"
-                disabled={formDisabled}
+                disabled={isSubmitting || subscribed}
               >
-                {mailchimpResult.result === "success" ? "👍🏽" : "Subscribe"}
+                {subscribed ? "👍🏽" : "Subscribe"}
               </button>
             </div>
           </Form>
