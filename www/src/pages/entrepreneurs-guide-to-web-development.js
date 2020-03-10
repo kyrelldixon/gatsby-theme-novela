@@ -8,7 +8,7 @@ import SEO from "@narative/gatsby-theme-novela/src/components/SEO";
 
 const BookLandingPage = () => (
   <Layout>
-    <SEO title="Make Money With Code" />
+    <SEO title="The Entrepreneur's Guide to Web Development" />
     <HeroSection />
     {/* <PainPoint /> */}
     <WhatYouLearn />
