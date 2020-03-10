@@ -12,7 +12,7 @@ import Footer from "./footer"
 import "../../styles/tailwind.css";
 
 const Layout = ({ children }) => (
-  <div className="antialiased text-gray-700 font-sans bg-white">
+  <div className="antialiased text-gray-800 font-sans bg-white">
     <main>{children}</main>
     <Footer />
   </div>

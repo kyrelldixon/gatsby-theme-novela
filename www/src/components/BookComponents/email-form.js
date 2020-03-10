@@ -54,50 +54,53 @@ const EmailForm = () => {
       onSubmit={handleSubmit}
     >
       {({ errors, touched, isSubmitting }) => (
-        <div className="w-full sm:w-112 text-center bg-white mx-auto rounded-lg pt-8 sm:shadow-lg">
-          <div className="px-8">
-            <p className="text-2xl font-semibold text-center text-gray-800">Be an Insider</p>
-            <p className="text-lg">Subscribe to get exclusive pricing and an inside look into the book's development.</p>
+        <div className="w-full text-grey-900 mx-auto rounded-lg pt-8">
+          <div className="mb-4">
+            <p className="text-2xl font-semibold text-grey-1000 mb-4">Join the newsletter</p>
+            <p className="text-base">
+              Subscribe to get free tips, ebooks, and blog posts that will help you get started building websites now. You'll also get exclusive pricing and an inside look into the book's development.
+            </p>
           </div>
-          <Form className="flex-col px-8 pt-6 pb-8">
-            <div className="mb-4">
+          <Form className="text-base flex flex-col flex-wrap md:flex-row md:items-start pt-6 pb-2">
+            <div className="flex-1 mb-4 md:mr-2">
               <Field
-                className="shadow appearance-none border rounded w-full py-2 px-3 mb-3 text-gray-700 leading-tight focus:border-indigo-500"
+                className={`appearance-none border placeholder-grey-700 ${errors.name && touched.name ? "border-red-500" : "border-grey-400"} rounded w-full py-3 px-3 text-grey-800 leading-tight focus:border-blue-400`}
                 name="name"
                 placeholder="Name"
                 type="text"
               />
-              {errors.name && touched.name && <p className="text-red-500 text-xs italic">{errors.name}</p>}
+              {errors.name && touched.name && <p className="text-red-500 text-xs mt-2 italic">{errors.name}</p>}
             </div>
-            <div className="mb-6">
+            <div className="flex-1 mb-4">
               <Field
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:border-indigo-500"
+                className={`appearance-none border placeholder-grey-700 ${errors.email && touched.email ? "border-red-500" : "border-grey-400"} rounded w-full py-3 px-3 text-grey-800 leading-tight focus:border-blue-400`}
                 name="email"
                 placeholder="Email"
                 type="email"
               />
-              {errors.email && touched.email && <p className="text-red-500 text-xs italic">{errors.email}</p>}
+              {errors.email && touched.email && <p className="text-red-500 text-xs mt-2 italic">{errors.email}</p>}
             </div>
-            <div className="flex flex-col items-center justify-center">
+            <button
+              className={
+                `bg-blue-500 mb-4 md:w-full ${!isSubmitting ? "hover:bg-blue-600" : "cursor-not-allowed"} text-base text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`
+              }
+              type="submit"
+              disabled={isSubmitting || subscribed}
+            >
+              {subscribed ? "👍🏽" : "Subscribe"}
+            </button>
+            <div className="w-full">
               {
                 error &&
-                <p className="text-red-500 text-sm italic -mt-3 mb-3">{error}</p>
+                <p className="text-center text-red-500 text-sm italic mb-3">{error}</p>
               }
               {
                 subscribed &&
-                <p className="text-green-500 text-sm italic -mt-3 mb-3">Your opt-in email is on the way!</p>
+                <p className="text-center text-green-500 text-sm italic mb-3">Your opt-in email is on the way!</p>
               }
-              <button
-                className={
-                  `bg-teal-400 ${!isSubmitting ? "hover:bg-teal-500" : "cursor-not-allowed"} text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`
-                }
-                type="submit"
-                disabled={isSubmitting || subscribed}
-              >
-                {subscribed ? "👍🏽" : "Subscribe"}
-              </button>
             </div>
           </Form>
+          <p className="text-xs text-gray-500 text-center">We respect your privacy. Unsubscribe at any time.</p>
         </div>
       )}
     </Formik>

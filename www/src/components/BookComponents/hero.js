@@ -22,18 +22,18 @@ const Hero = () => {
   useChain([comingSoonRef, bookRef], [0, 0.33])
 
   return (
-    <section className="bg-indigo-800 text-white">
-      <div className="container mx-auto text-center pt-16 pb-48">
-        <div className="mb-16 px-12">
+    <section className="bg-black text-grey-100">
+      <div className="flex flex-col items-center mx-auto lg:flex-row-reverse lg:text-right lg:pt-32 text-center pt-16 pb-32 md:px-12 max-w-6xl">
+        <div className="flex flex-col items-center justify-between lg:items-end mb-16 px-12 max-w-2xl mx-auto">
           {comingSoonTransition.map(({ item, key, props }) =>
-            item && <animated.p className="mb-4 font-bold text-gray-400 uppercase tracking-wide" key={key} style={props}>Coming Soon</animated.p>
+            item && <animated.p className="mb-10 font-bold text-grey-400 uppercase tracking-wide" key={key} style={props}>Coming Soon</animated.p>
           )}
-          <h1 className="mb-8 text-3xl font-semibold">Build websites that will get you paid,&nbsp;
-            <span className="text-blue-400">without years of experience.</span></h1>
-          <h2 className="text-lg text-gray-200">Learn how to turn side-projects and websites into profit by following a step-by-step process for developers at all levels.</h2>
+          <h1 className="mb-12 text-4xl font-semibold lg:text-5xl leading-snug">Build websites that will get you paid,&nbsp;
+            <span className="text-yellow-400">without years of experience.</span></h1>
+          <h2 className="text-lg text-grey-300 max-w-sm">Learn how to code landing pages and websites that drive traffic and revenue to your business.</h2>
         </div>
         {bookTransition.map(({ item, key, props }) =>
-          item && <animated.div className="mb-4 font-bold text-gray-400 uppercase tracking-wide" key={key} style={props}><Book /></animated.div>
+          item && <animated.div className="mb-4 font-bold text-grey-400 uppercase tracking-wide" key={key} style={props}><Book /></animated.div>
         )}
       </div>
     </section>
