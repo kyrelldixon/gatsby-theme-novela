@@ -5,7 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn workspace www build",
+    "build:functions": "yarn --cwd functions/convertkit",
+    "build:site": "yarn workspace www build",
+    "build": "yarn build:site && yarn build:functions",
     "dev": "yarn start",
     "lint": "eslint --ignore-path .gitignore .",
     "start": "yarn workspace www develop",
