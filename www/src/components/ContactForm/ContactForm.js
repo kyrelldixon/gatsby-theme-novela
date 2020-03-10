@@ -54,7 +54,7 @@ const ContactForm = () => {
   }
   const sendMail = (values) => {
     const { name, details } = values;
-    const myEmail = 'kyrell@kyrelldixon.com';
+    const myEmail = 'hello@kyrelldixon.com';
     const subject = `I'd like to work with you - ${name}`;
     const body = `Hi Kyrell,${newLine(2)}${details}`;
     const formattedBody = body.replace('\n', newLine(1))
@@ -62,17 +62,8 @@ const ContactForm = () => {
     window.location.href = `mailto:${myEmail}?subject=${subject}&body=${formattedBody}`;
   };
 
-  const createCalendlyUrl = (values) => {
-    const baseUrl = 'https://calendly.com/kyrell-dixon'
-    const { name, email, details } = values;
-    const detailsEncoded = encodeURI(details)
-    const queryParams = `name=${name}&email=${email}&a1=${detailsEncoded}`
-
-    const url = `${baseUrl}?${queryParams}`
-    return url;
-  }
-
   const handleSubmit = (values, { setSubmitting }) => {
+    sendMail(values)
     setSubmitting(false);
   }
 
@@ -116,8 +107,7 @@ const ContactForm = () => {
           </FormSection>
           <ButtonContainer animation={animation} delay={baseDelay + 800}>
             <ButtonArrow
-              as={'a'}
-              href={createCalendlyUrl(values)}
+              as={'button'}
               isSubmitting={isSubmitting}
               color="black"
               type="submit"
@@ -129,8 +119,7 @@ const ContactForm = () => {
             delay={baseDelay + 800}
           >
             <ButtonArrow
-              as={'a'}
-              href={createCalendlyUrl(values)}
+              as={'button'}
               isSubmitting={isSubmitting}
               color="black"
               type="submit"
