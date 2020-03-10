@@ -6,7 +6,7 @@ import Headings from "@components/Headings";
 import styled from "@emotion/styled";
 import mediaqueries from "@styles/media";
 
-import { addToConvertkit } from "../../../../utils";
+import { addToConvertKit } from "../../../../utils";
 
 const Subscription: React.FC<{}> = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +18,8 @@ const Subscription: React.FC<{}> = () => {
     event.preventDefault();
 
     setLoading(true)
-    addToConvertkit(email)
+    const formId = 1253732
+    addToConvertKit(formId, email, null, null, [1343911])
       .then(data => {
         if (data.statusCode !== 200) {
           throw data;

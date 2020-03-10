@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Formik, Form, Field } from "formik";
-import { addToConvertkit } from '../../utils';
+import { addToConvertKit } from '../../utils';
 
 const validate = values => {
   let errors = {}
@@ -28,7 +28,9 @@ const EmailForm = () => {
   const [error, setError] = useState("");
 
   function handleSubmit(values) {
-    addToConvertkit(values.email)
+    const formId = 1241734
+    const tags = [1343912]
+    addToConvertKit(formId, values.email, values.name, null, tags)
       .then(() => {
         setSubscribed(true)
 
