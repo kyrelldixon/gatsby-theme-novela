@@ -61,7 +61,7 @@ const EmailForm = () => {
               Subscribe to get free tips, ebooks, and blog posts that will help you get started building websites now. You'll also get exclusive pricing and an inside look into the book's development.
             </p>
           </div>
-          <Form className="text-base flex flex-col flex-wrap md:flex-row md:items-start pt-6 pb-2">
+          <Form className="text-base flex flex-col flex-wrap md:flex-row py-2">
             <div className="flex-1 mb-4 md:mr-2">
               <Field
                 className={`appearance-none border placeholder-grey-700 ${errors.name && touched.name ? "border-red-500" : "border-grey-400"} rounded w-full py-3 px-3 text-grey-800 leading-tight focus:border-blue-400`}
@@ -71,7 +71,7 @@ const EmailForm = () => {
               />
               {errors.name && touched.name && <p className="text-red-500 text-xs mt-2 italic">{errors.name}</p>}
             </div>
-            <div className="flex-1 mb-4">
+            <div className="flex-1 mb-4 md:mr-2">
               <Field
                 className={`appearance-none border placeholder-grey-700 ${errors.email && touched.email ? "border-red-500" : "border-grey-400"} rounded w-full py-3 px-3 text-grey-800 leading-tight focus:border-blue-400`}
                 name="email"
@@ -82,7 +82,7 @@ const EmailForm = () => {
             </div>
             <button
               className={
-                `bg-blue-500 mb-4 md:w-full ${!isSubmitting ? "hover:bg-blue-600" : "cursor-not-allowed"} text-base text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`
+                `bg-blue-500 mb-4 md:w-full lg:w-32 ${!isSubmitting ? "hover:bg-blue-600" : "cursor-not-allowed"} text-base text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`
               }
               type="submit"
               disabled={isSubmitting || subscribed}
