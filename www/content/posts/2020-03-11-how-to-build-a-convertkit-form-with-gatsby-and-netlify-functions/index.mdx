@@ -1,0 +1,40 @@
+---
+title: How to Build a Convertkit Form with Gatsby and Netlify Functions
+author: Kyrell Dixon
+date: 2020-03-11
+hero: ./images/hero.jpg
+excerpt: Learn how to use the ConvertKit API with Netlify functions to hide your API key without managing a server
+secret: true
+---
+https://stackoverflow.com/questions/46891622/run-yarn-in-a-different-path
+http://flummox-engineering.blogspot.com/2019/01/run-yarn-in-different-path-npm-prefix.html
+https://statickit.com/guides/convertkit-react
+https://functions-playground.netlify.com/
+https://community.netlify.com/t/netlify-dev-functions-gatsby-ports-etc/448/7
+https://travishorn.com/netlify-lambda-functions-from-scratch-1186f61c659e
+https://docs.netlify.com/functions/usage-and-billing/#change-levels
+
+1. Get Netlify Dev
+2. Create function with script
+3. Create function logic
+4. Create a form with Gatsby
+5. Set up deployment with package.json
+5. Deploy
+
+If you've worked with Gatsby, you've probably heard of Netlify. Netlify is a tool that makes it easy to deploy static sites of all kinds. Not only that, but they give you access to AWS Lambda which lets you write server logic without managing a server.
+
+This tutorial will show you exactly what you need to know to set them up together.
+
+## Get Netlify Dev
+
+Netlify Dev is an open source tool that helps developers test their deployments to Netlify. In this case, you'll need it to locally test the the functions you will later deploy to Netlify.
+
+To install it, use:
+
+```bash
+yarn global add netlify
+```
+
+I'll be using `yarn` as my package manager throughout the tutorial, but you can also use `npm` to install packages.
+
+Once you have 

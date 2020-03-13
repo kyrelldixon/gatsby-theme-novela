@@ -6,10 +6,12 @@ hero: ./images/hero.jpg
 slug: beginners-guide-to-building-a-site-from-scratch
 excerpt: How to go from a completely blank page to a full website with any framework
 tags: ['HTML', 'CSS', 'Web Fundamentals']
+secret: true
 ---
 
 The first time you open up a code editor to build a site can be pretty overwhelming. With all the HTML, CSS, and JavaScript that you have to write, where do you even start? This guide will end the confusion by giving you some practical steps on how to approach developing a site from an empty code editor to a complete web page.
 
+- [Create a wireframe](#create-a-wireframe)
 - [Start from a design](#start-from-a-design)
 - [Set up project structure](#set-up-project-structure)
 - [Structure the page with HTML](#structure-the-page-with-html)
@@ -17,13 +19,23 @@ The first time you open up a code editor to build a site can be pretty overwhelm
 - [Get fancy with JavaScript](#get-fancy-with-javascript)
 - [Fine-tune based on user feedback](#fine-tune-based-on-user-feedback)
 
+## Create a wireframe
+
+Wireframing is a technique that helps you get a general idea of the layout of your page. This is where you basically just draw a set of boxes and squiggles that are placeholders for navigation, paragraphs, images, and other elements you want to add to your page.
+
+The goal here is to keep it as minimal as possible and come up with as many variations of your site as possible. You should spend 5-10 minutes simply sketching wireframes as fast as possible with no concern for details.
+
 ## Start from a design
 
 This one is pretty straight-forward, but many developers tend to skip this step. If you don't really care about how your site turns out, then skip this step and hop right into the code. Just make sure you stay consistent in your mentality and don't spend 20 minutes tweaking your margins, padding, and font-size pixel by pixel until it's perfect.
 
-For the rest of us, get some inspiration! There are probably a few sites that have a design or style that you like. A few sites that I like to check out for inspiration are [Dribbble](https://www.dribbble.com) and [Behance](https://www.behance.net).b 
+For the rest of us, get some inspiration! There are probably a few sites that have a design or style that you like. A few sites that I like to check out for inspiration are [Dribbble](https://www.dribbble.com) and [Behance](https://www.behance.net). You can also develop a mood board to brainstorm your color scheme and overall direction for the design.
 
-You don't have feel bad about copying a design if it's for a side project that's not making you any money. In fact, copying a design is a great way to practice your development skills.
+Once you're feeling inspired, you can go back to your wireframe and fill in the boxes with real images and text that you'd want to see on your site. If you are looking to become a designer, you should make sure you spend a signifcant amount of time getting everything laid out so that when you transition to the HTML & CSS, you know exactly how your site should look.
+
+If you're a developer, then you probably don't need to spend too much time creating the design. Just getting a color scheme, adding text, and getting some images should be enough.
+
+Or if all you really care about is functionality and your code isn't making you any money, you could get away with copying a design. In fact, copying a design is a great way to practice your development skills.
 
 Once you find something or create something yourself, you can transition into code and start setting up the project.
 
