@@ -30,7 +30,11 @@ const EmailForm = () => {
   function handleSubmit(values) {
     const formId = 1241734
     const tags = [1343912]
-    addToConvertKit(formId, values.email, values.name, null, tags)
+    const options = {
+      firstName: values.name,
+      tags,
+    }
+    addToConvertKit(formId, values.email, options)
       .then(() => {
         setSubscribed(true)
 

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import styled from "@emotion/styled";
 
 import Section from "@components/Section";
 import Headings from "@components/Headings";
 
-import styled from "@emotion/styled";
 import mediaqueries from "@styles/media";
 
 import { addToConvertKit } from "../../../../utils";
@@ -19,7 +19,9 @@ const Subscription: React.FC<{}> = () => {
 
     setLoading(true)
     const formId = 1253732
-    addToConvertKit(formId, email, null, null, [1343911])
+    const tags = [1343911]
+
+    addToConvertKit(formId, email, { tags })
       .then(data => {
 
         setSubscribed(true);
