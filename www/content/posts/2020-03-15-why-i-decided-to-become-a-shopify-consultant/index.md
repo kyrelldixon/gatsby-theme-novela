@@ -1,0 +1,168 @@
+---
+title: Why I decided to become a Shopify Consultant
+author: Kyrell Dixon
+date: 2020-03-15
+hero: ./images/hero.jpg
+slug: why-i-decided-to-become-a-shopify-consultant
+excerpt: A short explanation on why I'm adding Shopify Consulting to my skill set
+---
+ 
+[Shopify](https://www.shopify.com/) is an eCommerce platform that has enabled hundreds of thousands of entrepreneurs around the world to build online businesses making over 155 billion dollars in total. Shopify's massive ecosystem has also created the opportunity for designers, developers, and marketing experts to consult these businesses and get a piece of the pie.
+
+Now, I'm one of them.
+
+This post details 6 reasons why I decided to become a Shopify Consultant along with some explanations for why you might want to consider it as well.
+
+- [I get to work directly with my tribe](#i-get-to-work-directly-with-my-tribe)
+- [Consulting makes it easier to travel the world](#consulting-makes-it-easier-to-travel-the-world)
+- [I can create more practical projects](#i-can-create-more-practical-projects)
+- [I will learn modern web development tools](#i-will-learn-modern-web-development-tools)
+- [I can diversify my income](#i-can-diversify-my-income)
+  - [I can teach the new technology stack to other developers](#i-can-teach-the-new-technology-stack-to-other-developers)
+  - [I will get paid directly through businesses looking for help](#i-will-get-paid-directly-through-businesses-looking-for-help)
+  - [I can monetize complementary skill sets](#i-can-monetize-complementary-skill-sets)
+- [It creates more opportunity for passive income](#it-creates-more-opportunity-for-passive-income)
+  - [More income = more runway](#more-income--more-runway)
+  - [Shopify affiliate income](#shopify-affiliate-income)
+  - [Public Shopify app development](#public-shopify-app-development)
+- [Final thoughts](#final-thoughts)
+
+## I get to work directly with my tribe
+
+At this point in my life, I strongly identify with being a digital nomad.
+
+For those that don't know, a digital nomad is a person that travels the world while working remotely. Usually, digital nomads make money through creating digital products, working remote jobs, freelance work, and/or building online businesses.
+
+In September 2019, I decided to take off to Thailand and pay for my travels exclusively through [developer coaching](https://www.kaicodes.com/contact) and [tutoring](https://www.wyzant.com/Tutors/KyrellTutors) so that I could officially join the digital nomad tribe.
+
+I had no idea what to expect since it was my first time leaving the US since I was a kid, but **I absolutely loved it**.
+
+Now, I am back in the US to learn Spanish for my next trip to South America. Since being back, I've been looking for ways to keep the entrepreneurial momentum going by surrounding myself with a group of entrepreneurs that I can work with regularly.
+
+That's where Shopify comes in.
+
+I realized that if I want to find more digital nomads, then I should look for entrepreneurs with online businesses. What's a better place to find entrepreneurs than a platform that helps them make billions?
+
+By consulting and helping Shopify business owners, I'm maximizing the chance to find other like-minded entrepreneurs. Meeting them as a consultant makes it easy for me to add business value to all the new relationships that I make, and hopefully make some new friends along the way.
+
+## Consulting makes it easier to travel the world
+
+One of the biggest challenges with teaching while traveling is scheduling meetings. I had no idea it was so difficult to work around dramatically different time zones.
+
+There is an 11 to 14-hour time difference between most of my US clients and Thailand. To schedule sessions, I had to set my availability for super early in the morning and late at night. Often I would have sessions scheduled at the extreme ends of the day. Late nights + early mornings = no sleep.
+
+I don't know about you, but **I need my sleep**.
+
+On top of that, constantly having meetings makes it hard to plan the week and work on a regular schedule. That's to be expected to some extent, but I would have much more flexibility as a consultant.
+
+With fixed-rate freelance jobs, I'm working on my schedule; it doesn't matter what timezone a client is in. All that matters is that I deliver value for the businesses that hire me by completing jobs. They don't care if I'm working on the moon as long as the work they need is done.
+
+I know that I will still have meetings, but they should be much less frequently and much more predictable. And that, is good enough for me.
+
+## I can create more practical projects
+
+This is a major one.
+
+I absolutely love learning, but only when I have a clear purpose for it. I'm not a fan of aimlessly learning information that I will never use (that's one reason why I'm not in school right now). I learn so that I can create value, for myself and others.
+
+Becoming a Shopify consultant aligns directly with a value-based mindset. Everything I do as a consultant is 100% about identifying problems and developing solutions. I can freely learn and dive deep into app and web development within the Shopify ecosystem.
+
+## I will learn modern web development tools
+
+Not only will I have practical projects, but it will help me further build my skills with a modern, high-demand tech stack. I recently started working on a Shopify app built with:
+
+- Next.js,
+- Koa,
+- GraphQL,
+- Web Hooks,
+- Shopify Polaris,
+- and ngrok
+
+just to name a few tools. I'm learning how to work with enterprise-level tools in a practical way, so after a year of working with the stack, I will have a skillset that companies of all levels are looking for.
+
+Not only that, but I'll have a portfolio and reviews full of proof that I can work with them effectively.
+
+## I can diversify my income
+
+With new skills comes new potential for more streams of income.
+
+Becoming a Shopify consultant will help me make more money in a few ways:
+
+- I will get paid directly through businesses looking for help
+- I can teach the new technology stack to other developers
+- I can monetize complementary skill sets
+
+I'll briefly break each of these down.
+
+### I can teach the new technology stack to other developers
+
+Working on Shopify stores will fine-tune my skill set and make it easier to teach what I know to other developers. I will also be able to help anyone else who is interested in getting into freelance work learn everything I did to become successful.
+
+This will allow me to add more value to my coaching services as a developer and potentially offer training services in the form of books, webinars, workshops, and courses.
+
+### I will get paid directly through businesses looking for help
+
+Even if I don't monetize my skills in other ways, the businesses that I work with will be paying me for the value that I offer them. Since there are no hard requirements for how long I consult each week, I can balance this with the work I do teaching students.
+
+### I can monetize complementary skill sets
+
+As I learn more about being a Shopify Consultant, I will also have opportunities to learn skills that aren't directly related to Shopify web and app development. Other skills I'll gain are:
+
+- Design
+- SEO
+- Setting up Analytics
+- Copywriting
+- Branding
+- etc.
+
+I can start to take smaller jobs that focus more intentionally on one of these skills and further diversify my income.
+
+## It creates more opportunity for passive income
+
+My overall financial goals center around maximizing the freedom I have to spend my time exactly how I want to. Developing systems that automatically provide income with *minimal time input- is the path I've found to achieve that (but I'm open to suggestions).
+
+In simple terms, I want to create more passive income.
+
+Being a Shopify consultant will help me make passive income in multiple ways:
+
+- More income = more runway
+- Shopify affiliate income
+- Public Shopify app development
+- Direct audience research
+
+### More income = more runway
+
+Building a business takes time and money to do successfully. In order to develop products like [this guide for entrepreneurs who want to learn to code](https://kyrelldixon.com/entrepreneurs-guide-to-web-development) (shameless plug), SaaS (Software as a Service) apps, or even my own Shopify stores, I will need to be able to focus on them for months or years at a time without expecting them to generate much money.
+
+This means I will either need:
+
+- A. A large enough savings to live on for an extended period, or
+- B. I'll have to work to pay the bills while developing my business.
+
+Currently, I'm using the [You Need a Budget app](https://www.youneedabudget.com) to budget and help manage my savings, but to save more quickly I have to increase my income. Niching down into Shopify consulting substantially boosts my income.
+
+### Shopify affiliate income
+
+As I develop stores for clients, I will get a percentage of revenue each month as long as their business is successful. This means that over time, I will be making passive income simply by doing my normal work as a consultant.
+
+### Public Shopify app development
+
+As I build my skills and understand the needs of Shopify businesses, I will develop a clear insight into different types of apps I can develop. Actively solving problems for businesses will make it much easier to see patterns and find opportunities to automate solutions.
+
+Another benefit of modifying and debugging problems with existing apps is that I will learn exactly what types of apps I *should not- make as well. I will see which apps take a long time to build and require a ton of support.
+
+I believe the best apps for me are ones that solve a single niche issue well and require minimal maintenance. As I learn the market, I can develop and test niche apps based on customer needs.
+
+Over time, I can develop a fleet of apps and just maintain them (or pay someone else to) and get out of consulting altogether if I like.
+
+## Final thoughts
+
+So at this point becoming a Shopify Consultant is looking like a great opportunity based on my current goals and vision for my life. If you're thinking this post is a **very*- optimistic look into consulting work, I absolutely agree.
+
+There will be many challenges and difficulties of becoming a successful Shopify Consulting as well. I believe that there are also several [black swans](https://en.wikipedia.org/wiki/Black_swan_theory) that could completely change my outlook on Shopify Consulting.
+
+However, as said best by Mark Manson in *The Subtle Art of Not Giving a F\*ck*:
+
+> Everything worthwhile in life is won through surmounting the associated negative experience.
+
+I accept the challenges, so all that's left is time and consistent effort.
