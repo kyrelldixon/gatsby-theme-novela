@@ -5,6 +5,7 @@ date: 2020-03-16
 hero: ./images/hero.jpg
 slug: what-i-learned-building-my-first-shopify-app-with-node-and-react
 excerpt: I recently went through the Shopify app development tutorial, and it wasn't perfect. However, I did learn a lot.
+tags: ['Shopify']
 ---
  
 After [deciding to become a Shopify Consultant](https://www.kyrelldixon.com/blog/why-i-decided-to-become-a-shopify-consultant#i-can-create-more-practical-projects), I immediately got to work understanding the ecosystem.
