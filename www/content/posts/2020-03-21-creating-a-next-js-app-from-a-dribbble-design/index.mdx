@@ -1,0 +1,55 @@
+---
+title: Creating a Next.js app from a Dribbble design
+author: Kyrell Dixon
+date: 2020-03-21
+hero: ./images/hero.jpg
+slug: creating-a-nextjs-app-from-a-dribbble-design
+excerpt: How I built a destination planner web app based on a Lonely Planet Dribbble design
+tags: ['Next.js', 'Design']
+---
+ 
+Recently, I realized that as a freelance developer and entrepreneur, it is really important to have at least some basic design skills. After reading [this excellent article](https://learnui.design/blog/5-practical-exercises-learn-ui-design-free.html) about improving your design skills, I was inspired to follow exercise 2 and do some **copywork**.
+
+That led me to a [Dribbble](https://dribbble.com/erikdkennedy/collections/310034-Copywork) (yes, with 3 b’s) bucket containing a collection of inspiring designs to copy. I chose to recreate [this design](https://dribbble.com/shots/3244008-Lonely-Planet-HP-Destination-Selector) by [Claudio Guglieri](https://dribbble.com/claudioguglieri) and convert it into working code using my go-to frontend stack of Next.js and Tailwind CSS.
+
+This is a quick post describing some of my development decisions and where I plan to go from here.
+
+Before we get into it, [this](https://lonely-planet.now.sh/) is the link to the web app and [this](https://github.com/kyrelldixon/lonely-planet) is a link to the Github repo if you want to see the code. The code is pretty clean if you ask me 😉.
+
+## The tech stack
+
+As I mentioned before, my overall tech stack for the project included:
+
+* [Next.js](https://nextjs.org/) for JSX and state management
+* [Tailwind CSS](https://tailwindcss.com/) for styling
+* [React Select](https://react-select.com/home) for the menus
+
+I decided to use Next.js and Tailwind CSS for the frontend mostly because they are fun to use, but also because they are very powerful. If you are new to frontend development and haven't heard of them yet, allow me to introduce you.
+
+Next.js is a JavaScript framework built on top of React.js--*another* JavaScript framework. There are tons of reasons why you might want to use Next.js, but I chose it simply because it helps me develop applications **fast**. If you're already comfortable with React, then you will *love* Next.js.
+
+On top of Next.js, I used Tailwind CSS for the styles. This also helped move fast without requiring me to write a single line of CSS. I had to modify the Tailwind config file a bit more than I normally do, but overall, getting all the styling done with Tailwind was a very straight-forward experience.
+
+What helped the most for this app was using the `react-select` library for the dropdown menus.
+
+## React Select is clutch
+
+Most people will not bother creating custom dropdown menus because it's nearly impossible to style them with plain CSS. For this app, I wanted to make the dropdowns match the design as closely as possible, so I had to find a solution.
+
+After looking through a few Stack Overflow posts and reading through [this post](https://css-tricks.com/dropdown-default-styling/) on styling dropdowns by CSS Tricks, I realized that using normal styling would not be worth the trouble. So I did what you should do when you want to build something quick: I looked for a library.
+
+That's how I came across `react-select`.
+
+In short, `react-select` is a library that makes it easy to create completely custom dropdown menus. All I had to do was pass in some custom styles into the style object and I was able to make the dropdowns look almost exactly like the design!
+
+## What I Learned
+
+The main takeaway from building this app is that open-source libraries are *incredible*. They made making this app a quick and almost completely painless process. On top of that, the code should be very readable for even beginner frontend developers.
+
+Another takeaway is that the next time I need a custom dropdown menu, I am definitely turning to `react-select`. Using it was smooth as your hands are after washing them thoroughly for at least 20 seconds to avoid spreading the Coronavirus.
+
+## Next Steps
+
+From here on out, I plan to use this same stack to completely recreate applications that you or someone you know is using every day. If you are interested in learning more, join the email list to get updates on the process!
+
+And like always, I would love to hear your thoughts on the article, so do not hesitate to reach out on [Twitter](https://twitter.com/kyrelldixon)!
